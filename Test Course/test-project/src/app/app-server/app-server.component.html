@@ -1,0 +1,9 @@
+<label>server name</label>
+<input name= "input1" type="text" class="form-control"
+(input)="onUpdateServerName($event)">
+<!-- two way binding using directive -->
+<hr>
+<input name="input2" type="text" class="form-control"
+[(ngModel)]="serverName"
+>
+<p>{{ serverName }}</p>
