@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CV</title>
+    <style>
+      body{
+        margin-left: 40px;
+      }
+      #fact{
+        display: none;
+      }
+
+    </style>
+    <script src="cvjs.js" defer></script>
+
+  </head>
+  <body>
+    <h1>Portfolio</h1>
+    <button id="fact-btn" onclick="showFact()">Show Fact</button>
+    <p id="fact">fact about me!</p>
+    <main>
+      <header>
+        <h2>Bisan Ghoul</h2>
+        <div>
+            <img src="./img888.jpg" style="width: 200px; height: 200px;">
+        </div>
+        <a href="https://linkedin.com">LinkedIn</a>
+        <a href="https://github.com">github.com</a>
+      </header>
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            TA at BZU, 2022 - current
+            <p>help with the practical aspect</p>
+          </li>
+        </ul>
+      </section>
+
+
+      
+      <hr />
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>java</li>
+          <li>C</li>
+          <li>spring boot</li>
+          <li>js</li>
+
+        </ul>
+      </section>
+      <hr />
+
+      <section class="hobbies">
+        <h2>Hobbies</h2>
+        <ol>
+          <li>Doomscrolling</li>
+          <li>fighting with people on twitter</li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section class="contactme" onclick="toggle()">
+        
+        <h2>Contact Me</h2><div id="contactmeid">
+        <form action="" onsubmit="checkFields()">
+          <label for="name" required>Full Name (required)</label>
+          <input type="text" name="name" id="name" placeholder="enter name"><br><br>
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" placeholder="e.g. bbisann@gmail.com"><br><br>
+          <label for="phone">pone num?</label>
+          <input type="number" name="phone" id="name" placeholder="enter phone num"><br><br>
+          <label for="color">fav color?</label>
+          <input type="color"><br>
+          <p>choose sex:</p>
+          <input type="radio" id="m" name="sex" value="male">
+          <label for="m">male</label>
+          <input type="radio" id="f" name="sex" value="female">
+          <label for="f">female</label><br>
+          <br> <label for="needs">what do u want?</label><br><br>
+          <textarea id="needs" name="needs" rows="4" cols="100"></textarea><br><br>
+          <label for="country">Select your country:</label>
+          <select id="country" name="country">
+              <option value="AF">Palestine</option>
+              <option value="AL">Jordan</option>
+              <option value="DZ">Lebanon</option>
+              <option value="AS">Syria</option>
+              <option value="AD">Egypt</option>
+            </select><br>
+              <br> <label for="time">select available time:</label>
+              <input id="time" type="time" name="time"><br><br>
+              <input type="submit" value="Submit"><br><br>
+        </form>
+      </div>
+      </section>
+      <footer style="border: 2px solid #000000;" >
+        <a href="#contactme">contact me</a>
+  
+      </footer>
+    </main>
+  </body>
+</html>
